@@ -1,0 +1,139 @@
+<html>
+<link rel="stylesheet" type="text/css" href="./flagGStyles.css">
+<style>
+p.ex1 {
+    margin: 35px;
+    }
+</style>
+
+<body style="background-image:url(leaves.jpg); background-repeat: repeat; background-position: 50% 50%">
+<center>
+<img src="waclogo.png"></img>
+<h3><b>FLAG GENERATOR</b></h3>
+
+<p class="ex1">
+
+
+<p class="ex1">
+<button class="button" 
+        id="flagbutton" 
+        style= "border-radius:50%; font-size:60px; border: none; background-color: #008CBA; color: white; padding: 15px 32px; text-align:center; ">
+    <span>
+    <h1>Reveal Country</h1>
+    </span>
+</button>
+</p>
+
+<!--javascript image generator-->
+<script>
+
+function random_imglink(){
+    var myimages=new Array()
+    //specify random images below. You can have as many as you wish
+    myimages[1]="America.gif"
+    myimages[2]="India.gif"
+    myimages[3]="Mexico.gif"
+    myimages[4]="Italy.gif"
+    myimages[5]="Argentina.gif"
+    myimages[6]="Afghanistan.gif"
+    myimages[7]="Bahamas.gif"
+    myimages[8]="Australia.gif"
+    myimages[9]="Austria.gif"
+    myimages[10]="Armenia.gif"
+    myimages[11]="Brunei.gif"
+    myimages[12]="Brazil.gif"
+    myimages[13]="Belgium.gif"
+    myimages[14]="Burkina Faso.gif"
+    myimages[15]="Bolivia.gif"
+    myimages[16]="Cuba.gif"
+    myimages[17]="Costa Rica.gif"
+    myimages[18]="China.gif"
+    myimages[19]="Chile.gif"
+    myimages[20]="Canada.gif"
+    myimages[21]="Dominican Republic.gif"
+    myimages[22]="Denmark.gif"
+    myimages[23]="Egypt.gif"
+    myimages[24]="Ethiopia.gif"
+    myimages[25]="El Salvador.gif"
+    myimages[26]="Ecuador.gif"
+    myimages[27]="France.gif"
+    myimages[28]="Finland.gif"
+    myimages[29]="Germany.gif"
+    myimages[30]="Georgia.gif"
+    myimages[31]="Greece.gif"
+    myimages[32]="Guatemala.gif"
+    myimages[33]="Haiti.gif"
+    myimages[34]="Honduras.gif"
+    myimages[35]="Iran.gif"
+    myimages[36]="Iraq.gif"
+    myimages[37]="Indonesia.gif"
+    myimages[38]="Israel.gif"
+    myimages[39]="Ireland.gif"
+    myimages[40]="Jamaica.gif"
+    myimages[41]="Japan.gif"
+    myimages[42]="Jordan.gif"
+    myimages[43]="Kazakhstan.gif"
+    myimages[44]="Kenya.gif"
+    myimages[45]="North Korea.gif"
+    myimages[46]="Kenya.gif"
+    myimages[47]="South Korea.gif"
+    myimages[48]="Laos.gif"
+    myimages[49]="Lithuania.gif"
+    myimages[50]="Lebanon.gif"
+    myimages[51]="Liberia.gif"
+    myimages[52]="Libya.gif"
+    myimages[53]="Macedonia.gif"
+    myimages[54]="Madagascar.gif"
+    myimages[55]="Malaysia.gif"
+    myimages[56]="Mozambique.gif"
+    myimages[57]="New Zealand.gif"
+    myimages[58]="Nepal.gif"
+    myimages[59]="Nigeria.gif"
+    myimages[60]="Norway.gif"
+    myimages[61]="Oman.gif"
+    myimages[62]="Pakistan.gif"
+    myimages[63]="Palestine.gif"
+    myimages[64]="Colombia.gif"
+    myimages[65]="Portugal.gif"
+    myimages[66]="Qatar.gif"
+    myimages[67]="Poland.gif"
+    
+    var ry=Math.floor(Math.random()*myimages.length)
+    if (ry==0)
+    ry=1
+    document.write('<img src="'+myimages[ry]+'" border=1>')
+    document.getElementById("flagbutton").addEventListener("click", function(){myFunction(myimages, ry)});
+
+    
+function myFunction(myimages, ry){
+
+var str = myimages[ry];
+var res = str.split(".");
+document.getElementById("flagbutton").innerHTML = res[0];
+
+}
+
+}
+
+
+
+random_imglink()
+</script>
+
+
+
+
+
+<p class=ex1>
+<button class="button1 bouncy" value="Refresh Page" onClick="window.location.reload();" style="background-color:#4CAF50; border:none; color:white; font-size: 50px;
+ padding: 30px 30px;">
+<h3>GENERATE FLAG</h3>
+</button>
+</p>
+
+</p>
+
+</center>
+</body>
+
+</html>
